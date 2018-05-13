@@ -1,0 +1,24 @@
+@import 'import/tnavbar'
+
+.link
+	color:#747373
+	border-radius: 5px
+.link:hover
+	color: black
+.dropdown
+	position: relative
+	display: inline-block
+
+.dropdown-dropped
+	display: none
+	position: absolute
+	min-width: 500px
+	z-index: 1
+
+.dropdown-dropped
+	a
+		background: black
+		display: block
+
+.dropdown:hover .dropdown-dropped
+	display: block

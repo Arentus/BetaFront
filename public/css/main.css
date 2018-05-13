@@ -1,0 +1,157 @@
+.navbar {
+  margin: 0;
+  padding: 0;
+  color: black;
+  padding: 0 5px;
+}
+
+.btnlang {
+  cursor: pointer;
+  color: grey;
+  border: none;
+  background: transparent;
+}
+
+.btnlang:hover {
+  color: #444343;
+}
+
+.btnlang:focus {
+  outline: 0;
+}
+
+.langdrop {
+  border: none;
+  box-shadow: -1px 3px 2px #E7E7E7, 1px 0px 2px #E7E7E7;
+  transition: all 1s ease;
+}
+
+.langdrop a:hover {
+  color: #5A3EEB;
+  transition: all 0.3s ease;
+}
+
+.langdrop a:active {
+  background: grey;
+  color: white;
+}
+
+.lgflag {
+  width: 0.9em;
+  height: auto;
+}
+
+.collaxbar {
+  display: none;
+}
+
+.wrappersearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  background: black;
+}
+
+.searchbar {
+  text-align: center;
+  padding: 1em 5em;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.searchbar:focu {
+  border-bottom: 3px solid white;
+}
+
+@media screen and (max-width: 600px) {
+  .wrappersearch {
+    padding: 1em;
+    display: block;
+    height: auto;
+  }
+
+  .searchbar {
+    width: 100%;
+    text-align: center;
+    padding: 1em 1em;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+.searchbar:focus {
+  outline: none;
+}
+
+.link {
+  color: #747373;
+  border-radius: 5px;
+}
+
+.link:hover {
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-dropped a {
+  margin-bottom: 2px;
+  border-radius: 5px;
+  display: block;
+  transition: all 1s ease;
+}
+.dropdown:hover .dropdown-dropped {
+  display: block;
+}
+
+@media screen and (min-width: 800px){
+
+    .dropdown-dropped {
+    display: none;
+    border-top: 2px solid #4331CA;
+    background: whitesmoke;
+    padding: 5px;
+    position: absolute;
+    min-width: 600px;
+    height: auto;
+    z-index: 1;
+    transition: all 1s ease;
+  }
+}
+
+.wrapperflex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px){   
+  .dropdown-dropped {
+    display: none;
+    height: auto;
+    z-index: 1;
+    background: #000;
+    border-radius: 5px;
+  }
+
+.dropdown:hover .dropdown-dropped,.dropdown:active .dropdown-dropped {
+  display: block;
+}
+  .pic-side{
+    display: none;
+  }
+}
+
+.img-nav{
+  width: 20em;
+}
+/*# sourceMappingURL=main.css.map */

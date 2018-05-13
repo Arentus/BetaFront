@@ -1,0 +1,76 @@
+.navbar
+	margin: 0
+	padding: 0
+	color: black
+	padding: 0 5px
+
+.btnlang
+	cursor: pointer
+	color: grey
+	border: none
+	background: transparent
+
+.btnlang:hover
+	color: #444343
+
+.btnlang:focus
+	outline: 0
+
+.langdrop
+	border: none
+	box-shadow: -1px 3px 2px #E7E7E7,1px 0px 2px #E7E7E7
+	transition: all 1s ease
+
+.langdrop a:hover
+	color: #5A3EEB
+	transition: all 0.3s ease
+
+
+.langdrop a:active
+	background: grey
+	color: white
+
+.lgflag
+	width: 0.9em
+	height: auto
+
+.collaxbar
+	display: none
+
+.wrappersearch
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 30rem
+	background: black
+
+
+.searchbar
+	text-align: center
+	padding: 1em 5em
+	background-color: transparent
+	border: none
+	font-size: 30px
+	border-bottom: 2px solid white
+	color: white
+.searchbar:focu
+	border-bottom: 3px solid white
+
+@media screen and (max-width: 400px)
+	.wrappersearch
+		padding: 1em
+		display: block
+		height: auto
+
+	.searchbar
+		width: 100%
+		text-align: center
+		padding: 1em 1em
+		margin-bottom: 10px
+
+	.btn
+		width: 100%
+
+.searchbar:focus
+	outline: none
