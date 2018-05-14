@@ -44,14 +44,18 @@
 .collaxbar {
   display: none;
 }
-
+.headertitle{
+  font-size: 50px;
+}
 .wrappersearch {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 30rem;
-  background: black;
+  background-image: url('../assets/img/7010052-beautiful-sunset-landscape.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .searchbar {
@@ -119,10 +123,10 @@
     .dropdown-dropped {
     display: none;
     border-top: 2px solid #4331CA;
-    background: whitesmoke;
+    background: white;
     padding: 5px;
     position: absolute;
-    min-width: 600px;
+    min-width: 100vh;
     height: auto;
     z-index: 1;
     transition: all 1s ease;
@@ -154,4 +158,95 @@
 .img-nav{
   width: 20em;
 }
-/*# sourceMappingURL=main.css.map */
+
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* The hero image */
+
+.l-img {
+
+    /* The image used */
+    background-image: url("../assets/img/5521046-art-wallpaper.jpg");
+    /* Set a specific height */
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+@media screen and (max-width: 600px){
+  .l-img{
+    padding: 2em;
+  }
+}
+
+@media screen and (min-height: 800px){
+  .l-text{
+    font-size: 5em;
+  }
+  .l-img .btn{
+    width: 5em;
+    font-size: 30px;
+  }
+}
+/* Place text in the middle of the image */
+.l-text {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+.blockb{
+  background: white;
+  color: white;
+}
+.title{
+  text-align: center;
+
+}
+.l-card{
+  margin: 1em 0.2em;
+  padding: 1em;
+  color: #4F4E4E;
+  border-radius: 5px;
+  background: white;
+  height: 100%;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.l-card:hover{
+  transform: translateY(-9px);
+  box-shadow: 2px 2px 6px #A6A6A6;
+}
+.gcard{
+  background: #9BB0FE;
+  color: white;
+}
+.l-card img{
+  padding: 1em;
+}
+
+.c-img{
+  width: 100%;
+  height: 250px;
+  min-height: 200px;
+}
+
+.l-footer{
+  padding: 50px;
+  margin-top: 60px;
+  display: block;
+  background: #0B2B44;
+  color: white;
+}
+
+.l-footer a{
+  text-decoration: none;
+}
